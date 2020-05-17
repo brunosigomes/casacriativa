@@ -24,7 +24,7 @@ server.get("/", function (req, res) {
 
         let lastIdeas = []
         for (let idea of reverseIdeas) {
-            if (lastIdeas.length < 3) {
+            if (lastIdeas.length < 2) {
                 lastIdeas.push(idea)
             }
         }

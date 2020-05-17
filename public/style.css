@@ -323,3 +323,8 @@ section#ideas .idea {
 section#title, section#ideas, footer {
     margin-top: 64px;
 }
+
+.ajuste_exibicao_last_ideas {
+    margin-top: 0px!important;
+    margin-bottom: 20px;
+}
