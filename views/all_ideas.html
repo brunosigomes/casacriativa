@@ -1,0 +1,19 @@
+{% for idea in ideas %}
+
+<div class="idea">
+    <a href="/deleteIdea/{{ idea.id }}"><img src="https://image.flaticon.com/icons/svg/1214/1214428.svg" alt="Icone de Lixeira" class="trash"></a>
+    <img src="{{idea.image}}" alt="Imagem de Curso de Programação">
+
+    <div class="content">
+        <h3> {{idea.title}}</h3>
+        <p> {{idea.category}}</p>
+
+        <div class="description">
+            {{idea.description}}
+        </div>
+
+        <a href="{{idea.link}}" target="_blank">Ir para a Ideia</a>
+    </div>
+</div>
+
+{% endfor %}
